@@ -50,7 +50,7 @@ public class RockMusicAdapter extends RecyclerView.Adapter<RockMusicAdapter.MyVi
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         holder.artistName.setText(results.get(position).getArtistName());
-        //holder.trackprice.setText(results.get(position).getTrackPrice().toString());
+        holder.trackprice.setText(results.get(position).getTrackPrice().toString());
         holder.collection.setText(results.get(position).getCollectionName());
         Picasso.with(applicationContext)
                 .load(results.get(position).getArtworkUrl60())
